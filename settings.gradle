@@ -1,0 +1,3 @@
+rootProject.name = 'sketchbook'
+include "sketchbook-domain", "sketchbook-interface"
+

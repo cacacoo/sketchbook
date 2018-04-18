@@ -1,0 +1,17 @@
+repositories {
+    mavenCentral()
+}
+
+bootJar {
+	enabled = false
+}
+
+jar {
+	enabled = true
+}
+
+dependencies {
+    runtime('mysql:mysql-connector-java')
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}

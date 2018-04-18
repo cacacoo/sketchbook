@@ -1,0 +1,39 @@
+buildscript {
+	ext {
+		springBootVersion = '2.0.1.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+configurations {
+	providedRuntime
+}
+
+subprojects {
+	apply plugin: 'java'
+	apply plugin: 'eclipse-wtp'
+	apply plugin: 'io.spring.dependency-management'
+	apply plugin: 'org.springframework.boot'
+
+	group = 'com.sketchbook'
+	version = '0.0.1-SNAPSHOT'
+	sourceCompatibility = 1.8
+
+	dependencies {
+		compile group: 'com.google.guava', name: 'guava', version: '11.0.2'
+		compileOnly('org.springframework.boot:spring-boot-configuration-processor')
+		compileOnly('org.projectlombok:lombok')
+		testCompile('org.springframework.boot:spring-boot-starter-test')
+	}
+}
+
+

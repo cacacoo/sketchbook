@@ -1,0 +1,38 @@
+{
+  "name": "sketchbook",
+  "version": "1.0.0",
+  "description": "just sketchbook",
+  "repository": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "s": "webpack-dev-server --hot",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "author": "cacacoo",
+  "license": "ISC",
+  "dependencies": {
+    "material-ui": "^1.0.0-beta.41",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "react-redux": "5.0.5",
+    "redux": "3.6.0",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.16.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.25.0",
+    "babel-eslint": "7.1.1",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-dev-middleware": "^3.1.2",
+    "webpack-dev-server": "^3.1.3",
+    "webpack-hot-middleware": "^2.21.2",
+    "webpack-manifest-plugin": "^2.0.0",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
