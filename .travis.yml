@@ -1,0 +1,18 @@
+language: java
+jdk:
+  - openjdk8
+
+branches:
+  only:
+  - master
+
+install:
+  - nvm install v8.10.0
+  - npm install
+
+script:
+  - ./gradlew clean build
+
+after_success:
+  - webpack --mode production
+
